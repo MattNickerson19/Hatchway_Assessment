@@ -45,7 +45,7 @@ export function Student({firstName, lastName, email, company, skill, grades = []
                     {tags.map((tag) => {
                         return <p className="tag">{tag}</p>
                     })}
-                    <input type="text" placeholder="Add a tag" onKeyUp={(event) => {
+                    <input className="input" type="text" placeholder="Add a tag" onKeyUp={(event) => {
                         if (event.key === "Enter") {
                             tagsList.push(event.target.value)
                             setTags(tagsList)

@@ -11,8 +11,7 @@ export function StudentList( {students = []}){
         <Container className=" pt-5 w-75 " >
             <input className="form-control form-control-lg " type="text" placeholder="Search by Name" 
                     onChange={event => {setSearchTerm(event.target.value)}}/>
-            <input className="form-control form-control-lg " type="text" placeholder="Search by Tag" 
-                    onChange={event => {setSearchTag(event.target.value)}}/>
+            
 
             {students.filter((val)=>{
                 if(searchTerm == ""){

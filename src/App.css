@@ -26,3 +26,7 @@ img{
 
   
 }
+.input{
+  border-style: none;
+  border-bottom-style: solid ;
+}
